@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Maquetado</title>
+
+</head>
+<body>
+
+    <header class="header">
+        <div>
+            <h2>Formulario</h2>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="contenedor">
+            <div class="contacto-bg"></div>
+
+            <form class="formulario" action="">
+                <div class="campo">
+                    <label class="campo_label" for="usuario">Usuario</label>
+                    <input class="campo_input borde" type="text" name="usuario" id="usuario" placeholder="Ingrese usuario">
+                </div>
+        
+                <div class="campo">
+                    <label class="campo_label" for="contraseña">Contraseña</label>
+                    <input class="campo_input borde" type="password" name="contraseña" id="contraseña" placeholder="Ingrese contraseña">
+                </div>
+        
+                <div class="campo">    
+                    
+                        <div class="campo_label">
+                            <label for="genero">Género:</label>
+                        </div>
+    
+                        <div class="campo_input">
+                            <label for="masculino">Masculino</label>
+                            <input type="radio" name="masculino" id="masculino" value="masculino">
+        
+                            <label for="femenino">Femenino</label>
+                            <input type="radio" name="femenino" id="femenino" value="femenino">
+        
+                            <label for="otro">Otro</label>
+                            <input type="radio" name="otro" id="otro" value="otro">
+                        </div>
+    
+                </div>
+        
+        
+                <div class="campo">
+                    <label class="campo_label" for="fecha_nacimiento">Fecha de Nacimiento:</label>
+    
+                    <div class="campo_input">
+                        <select  name="fecha_nacimiento" id="fecha_nacimiento">
+                            <option value="2000">2000</option>
+                            <option value="1999">1999</option>
+                            <option value="1998">1998</option>
+                            <option value="1997">1997</option>
+                            <option value="1996">1996</option>
+                            <option value="1995">1995</option>
+                        </select>
+                    </div>
+    
+                </div>
+                
+                <div class="campo">
+                    <div class="campo_label">
+                        <label>Casado:</label>
+                    </div>
+                    
+                    <div class="campo_input">
+                        <label for="casado">Si</label>
+                        <input type="checkbox" name="casado" id="casado" value="true">
+        
+                        <label for="no_casado">No</label>
+                        <input type="checkbox" name="no_casado" id="no_casado" value="false">
+    
+                    </div>
+                        
+                </div>
+        
+                <div class="campo">
+                    <label class="campo_label" for="texto">Comentario:</label>
+                    <textarea class="campo_input campo_input--textarea borde" name="texto" id="texto"></textarea>
+                </div>
+        
+                <div class="campo">
+                    <div class="campo_label centrar">
+                        <input class="boton" type="submit" value="Enviar" >
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+    </main>
+
+</body>
+</html>
